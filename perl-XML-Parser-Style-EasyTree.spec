@@ -24,7 +24,7 @@ no description found
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
-%patch0 -b .cpanplus
+%patch0 -p0 -b .cpanplus
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
