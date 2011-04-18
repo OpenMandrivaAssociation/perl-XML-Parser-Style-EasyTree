@@ -13,7 +13,7 @@ Source0:    http://www.cpan.org/modules/by-module/XML/%{upstream_name}-%{upstrea
 Patch0:     XML-Parser-Style-EasyTree-0.09-fix-version-for-cpanplus.patch
 
 BuildRequires: perl(ex::lib)
-
+BuildRequires: perl(XML::Parser)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
