@@ -1,0 +1,12 @@
+--- lib/XML/Parser/Style/EasyTree.pm.orig	2009-08-27 13:27:47.000000000 +0200
++++ lib/XML/Parser/Style/EasyTree.pm	2009-12-31 15:12:51.000000000 +0100
+@@ -52,8 +52,7 @@
+ 			*$_ = \%{'XML::Parser::Style::ETree::'.$_};
+ 		}
+ 	}
+-	require XML::Parser::Style::ETree;
+-	$VERSION = $XML::Parser::Style::ETree::VERSION;
++	require XML::Parser::Style::ETree; $VERSION = $XML::Parser::Style::ETree::VERSION;
+ 	*$_ = \&{'XML::Parser::Style::ETree::'.$_}
+ 		for qw(Init Start End Char Final); 
+ }
