@@ -2,14 +2,14 @@
 %define upstream_version 0.09
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Parse xml to simple tree
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/XML-Parser-Style-EasyTree
+Source0:	https://cpan.metacpan.org/authors/id/M/MO/MONS/XML-Parser-Style-EasyTree-%{upstream_version}.tar.gz
 Patch0:		XML-Parser-Style-EasyTree-0.09-fix-version-for-cpanplus.patch
 
 BuildRequires:	make
