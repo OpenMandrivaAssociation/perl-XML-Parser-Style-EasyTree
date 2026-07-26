@@ -1,15 +1,13 @@
 %define upstream_name    XML-Parser-Style-EasyTree
-%define upstream_version 0.09
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.09
+Release:	7
 
 Summary:	Parse xml to simple tree
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/XML-Parser-Style-EasyTree
-Source0:	https://cpan.metacpan.org/authors/id/M/MO/MONS/XML-Parser-Style-EasyTree-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MO/MONS/XML-Parser-Style-EasyTree-%{version}.tar.gz
 Patch0:		XML-Parser-Style-EasyTree-0.09-fix-version-for-cpanplus.patch
 
 BuildRequires:	make
@@ -24,7 +22,7 @@ Requires:	perl(ex::lib)
 Parse xml to simple tree.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 %patch0 -p0 -b .cpanplus
 
 %build
@@ -68,8 +66,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 0.30.0-1mdv2010.0
 + Revision: 401464
 - rebuild
-- using %%perl_convert_version
-- fixed license field
+- using %0.09 fixed license field
 
 * Fri May 15 2009 Jérôme Quelin <jquelin@mandriva.org> 0.03-2mdv2010.0
 + Revision: 375886
